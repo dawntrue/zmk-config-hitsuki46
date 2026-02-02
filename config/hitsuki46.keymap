@@ -52,6 +52,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        sleep: sleep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_WIN &kp Q>;
+            label = "SLEEP";
+        };
     };
 
     behaviors {
@@ -97,10 +104,10 @@
 
         SYMBOL {
             bindings = <
-&trans  &kp N1            &kp N2             &kp N3          &kp N4           &kp N5         &kp N6          &kp N7          &kp N8        &kp N9           &kp N0                 &trans
-&trans  &trans            &trans             &kp HASH        &trans           &kp BACKSLASH  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp MINUS              &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE       &trans          &trans          &mo 3         &trans           &mt RIGHT_SHIFT SLASH  &trans
-        &trans            &trans             &trans          &trans           &trans         &trans          &kp NUMBER_0    &trans        &trans           &kp PERIOD
+&trans  &kp N1                &kp N2                &kp N3                  &kp N4             &kp N5         &kp N6          &kp N7          &kp N8        &kp N9           &kp N0                   &trans
+&trans  &mt LEFT_CONTROL TAB  &mt LEFT_ALT GRAVE    &mt LEFT_COMMAND EQUAL  &kp SQT            &kp SEMICOLON  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mt RIGHT_CONTROL MINUS  &trans
+&trans  &kp LEFT_SHIFT        &kp NON_US_BACKSLASH  &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &trans         &trans          &trans          &trans        &kp PERIOD       &mt RIGHT_SHIFT SLASH    &trans
+        &trans                &trans                &trans                  &trans             &trans         &trans          &trans          &trans        &trans           &trans
             >;
         };
 
@@ -109,7 +116,7 @@
 &trans  &trans  &trans    &kp UP    &trans     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COLON     &trans     &trans
 &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp MINUS  &trans
 &trans  &trans  &trans    &trans    &trans     &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp SLASH  &trans
-        &trans  &trans    &trans    &trans     &trans  &kp PERIOD    &kp NUMBER_0  &trans        &trans        &trans
+        &trans  &trans    &trans    &sleep     &trans  &kp PERIOD    &kp NUMBER_0  &trans        &trans        &trans
             >;
         };
 
