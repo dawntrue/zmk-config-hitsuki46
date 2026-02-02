@@ -97,7 +97,7 @@
             bindings = <
 &trans  &trans          &trans      &trans          &trans          &trans  &trans  &trans          &trans          &trans      &trans  &trans
 &trans  &trans          &kp ESCAPE  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans  &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp ESCAPE  &trans  &trans
-&trans  &kp LEFT_SHIFT  &mkp MB1    &mkp MB3        &mkp MB2        &trans  &trans  &mkp MB1        &mkp MB3        &mkp MB2    &trans  &trans
+&trans  &kp LEFT_SHIFT  &mkp MB1    &mkp MB3        &mkp MB2        &trans  &trans  &mkp MB2        &mkp MB3        &mkp MB1    &trans  &trans
         &trans          &trans      &trans          &trans          &trans  &trans  &trans          &trans          &trans      &trans
             >;
         };
