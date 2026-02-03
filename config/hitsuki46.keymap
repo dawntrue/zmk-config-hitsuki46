@@ -100,7 +100,7 @@
             bindings = <
 &trans  &trans          &trans      &trans          &trans          &trans  &kp LG(C)           &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &trans               &kp LG(V)  &trans
 &trans  &trans          &kp ESCAPE  &kp LANGUAGE_2  &kp LANGUAGE_1  &to 0   &kp LC(LEFT_ARROW)  &mkp MB1            &mo 5             &kp LC(RIGHT_ARROW)  &trans     &trans
-&trans  &kp LEFT_SHIFT  &mkp MB1    &mkp MB3        &mkp MB2        &trans  &msc MOVE_X(-5)     &msc MOVE_Y(-5)     &msc MOVE_Y(10)   &msc MOVE_X(5)       &trans     &trans
+&trans  &kp LEFT_SHIFT  &mkp MB1    &mkp MB3        &mkp MB2        &trans  &msc MOVE_X(10)     &msc MOVE_Y(10)     &msc MOVE_Y(-10)  &msc MOVE_X(-10)     &trans     &trans
         &trans          &trans      &trans          &trans          &trans  &trans              &trans              &trans            &trans               &trans
             >;
         };
