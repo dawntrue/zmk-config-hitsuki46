@@ -33,9 +33,25 @@
                 <&macro_press>,
                 <&kp LEFT_WIN &kp LEFT_CONTROL>,
                 <&macro_tap>,
-                <&kp Q>;
+                <&kp Q>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND &kp LEFT_CONTROL>;
 
             label = "SLEEP";
+        };
+
+        vim_normal: vim_normal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp ESCAPE>;
+            label = "VIM_NORMAL";
+        };
+
+        vim_insert: vim_insert {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp LANGUAGE_1>;
+            label = "VIM_INSERT";
         };
     };
 
@@ -73,10 +89,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans          &trans      &trans          &trans          &trans  &trans  &trans          &trans          &trans      &trans  &trans
-&trans  &trans          &kp ESCAPE  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans  &trans  &kp LANGUAGE_1  &kp LANGUAGE_2  &kp ESCAPE  &trans  &trans
-&trans  &kp LEFT_SHIFT  &mkp MB1    &mkp MB3        &mkp MB2        &trans  &trans  &mkp MB2        &mkp MB3        &mkp MB1    &trans  &trans
-        &trans          &trans      &trans          &trans          &trans  &trans  &trans          &trans          &trans      &trans
+&trans  &trans          &trans      &trans          &trans          &trans  &kp LG(C)           &trans    &kp LC(UP_ARROW)  &trans               &kp LG(V)  &trans
+&trans  &trans          &kp ESCAPE  &kp LANGUAGE_2  &kp LANGUAGE_1  &to 0   &kp LC(LEFT_ARROW)  &mkp MB1  &mo 5             &kp LC(RIGHT_ARROW)  &trans     &trans
+&trans  &kp LEFT_SHIFT  &mkp MB1    &mkp MB3        &mkp MB2        &trans  &trans              &none     &none             &none                &trans     &trans
+        &trans          &trans      &trans          &trans          &trans  &trans              &trans    &trans            &trans               &trans
             >;
         };
 
@@ -84,8 +100,8 @@
             bindings = <
 &trans  &kp N1                &kp N2                &kp N3                  &kp N4             &kp N5         &kp N6          &kp N7          &kp N8        &kp N9           &kp N0                   &trans
 &trans  &mt LEFT_CONTROL TAB  &mt LEFT_ALT GRAVE    &mt LEFT_COMMAND EQUAL  &kp SQT            &kp SEMICOLON  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mt RIGHT_CONTROL MINUS  &trans
-&trans  &kp LEFT_SHIFT        &kp NON_US_BACKSLASH  &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &trans         &trans          &trans          &trans        &kp PERIOD       &mt RIGHT_SHIFT SLASH    &trans
-        &trans                &trans                &trans                  &trans             &trans         &trans          &trans          &trans        &trans           &trans
+&trans  &kp LEFT_SHIFT        &kp NON_US_BACKSLASH  &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &trans         &to 2           &trans          &trans        &kp PERIOD       &mt RIGHT_SHIFT SLASH    &trans
+        &trans                &trans                &trans                  &vim_normal        &vim_insert    &trans          &trans          &trans        &trans           &trans
             >;
         };
 
