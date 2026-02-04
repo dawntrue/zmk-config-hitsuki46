@@ -16,7 +16,14 @@
 // };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        cmd_alt {
+            bindings = <&kp RA(RIGHT_COMMAND)>;
+            key-positions = <31 32>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -89,18 +96,18 @@
 
         SYMBOL {
             bindings = <
-&trans  &kp N1                &kp N2                &kp N3                  &kp N4             &kp N5         &kp N6          &kp N7          &kp N8        &kp N9           &kp N0                   &trans
-&trans  &mt LEFT_CONTROL TAB  &mt LEFT_ALT GRAVE    &mt LEFT_COMMAND EQUAL  &kp SQT            &kp SEMICOLON  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mt RIGHT_CONTROL MINUS  &trans
-&trans  &kp LEFT_SHIFT        &kp NON_US_BACKSLASH  &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &trans         &to 3           &trans          &trans        &kp PERIOD       &mt RIGHT_SHIFT SLASH    &trans
-        &trans                &trans                &trans                  &vim_normal        &vim_insert    &trans          &trans          &trans        &trans           &trans
+&trans  &kp N1                &kp N2              &kp N3                  &kp N4             &kp N5         &kp N6          &kp N7          &kp N8        &kp N9           &kp N0                   &trans
+&trans  &mt LEFT_CONTROL TAB  &mt LEFT_ALT GRAVE  &mt LEFT_COMMAND EQUAL  &kp SQT            &kp SEMICOLON  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mt RIGHT_CONTROL MINUS  &trans
+&trans  &kp LEFT_SHIFT        &kp BACKSLASH       &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &trans         &to 3           &trans          &trans        &kp PERIOD       &mt RIGHT_SHIFT SLASH    &trans
+        &trans                &trans              &trans                  &vim_normal        &vim_insert    &trans          &trans          &trans        &trans           &trans
             >;
         };
 
         FUNCTION {
             bindings = <
-&trans  &trans          &trans      &trans          &trans          &trans  &kp LG(C)           &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &trans               &kp LG(V)  &trans
-&trans  &trans          &kp ESCAPE  &kp LANGUAGE_2  &kp LANGUAGE_1  &to 0   &kp LC(LEFT_ARROW)  &mkp MB1            &mo 5             &kp LC(RIGHT_ARROW)  &trans     &trans
-&trans  &kp LEFT_SHIFT  &mkp MB1    &mkp MB3        &mkp MB2        &trans  &msc MOVE_X(15)     &msc MOVE_Y(15)     &msc MOVE_Y(-15)  &msc MOVE_X(-15)     &mkp MB2   &trans
+&trans  &trans          &trans      &trans          &trans          &trans  &kp LG(C)           &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LEFT_ALT         &kp LG(LA(V))  &trans
+&trans  &trans          &kp ESCAPE  &kp LANGUAGE_2  &kp LANGUAGE_1  &to 0   &kp LC(LEFT_ARROW)  &mkp MB1            &mo 5             &kp LC(RIGHT_ARROW)  &trans         &trans
+&trans  &kp LEFT_SHIFT  &mkp MB1    &mkp MB3        &mkp MB2        &trans  &msc MOVE_X(15)     &msc MOVE_Y(15)     &msc MOVE_Y(-15)  &msc MOVE_X(-15)     &mkp MB2       &trans
         &trans          &trans      &trans          &trans          &trans  &trans              &lt 2 ENTER         &trans            &trans               &trans
             >;
         };
