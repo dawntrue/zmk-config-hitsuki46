@@ -135,28 +135,28 @@
 
         NUM {
             bindings = <
-&trans  &trans  &trans    &kp UP    &trans     &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COLON     &trans     &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp MINUS  &trans
-&trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2   &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp SLASH  &trans
-        &trans  &trans    &trans    &sleep     &trans  &kp PERIOD    &kp NUMBER_0  &trans        &trans        &trans
+&trans  &trans  &trans    &trans    &trans    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COLON     &trans     &trans
+&trans  &trans  &trans    &trans    &trans    &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp MINUS  &trans
+&trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp SLASH  &trans
+        &trans  &trans    &trans    &sleep    &trans  &kp PERIOD    &kp NUMBER_0  &trans        &trans        &trans
             >;
         };
 
         R_MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(C)           &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LEFT_ALT         &kp LG(V)       &trans
-&trans  &trans  &trans  &trans  &trans  &to 0   &kp LC(LEFT_ARROW)  &mkp MB1            &mo 5             &kp LC(RIGHT_ARROW)  &kp LEFT_SHIFT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &msc MOVE_X(15)     &msc MOVE_Y(15)     &msc MOVE_Y(-15)  &msc MOVE_X(-15)     &mkp MB2        &trans
-        &trans  &trans  &trans  &trans  &trans  &trans              &lt 2 ENTER         &trans            &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(C)           &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LEFT_ALT         &kp LG(V)        &trans
+&trans  &trans  &trans  &trans  &trans  &to 0   &kp LC(LEFT_ARROW)  &mkp MB1            &mo 5             &kp LC(RIGHT_ARROW)  &mkp MB2         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &msc MOVE_X(15)     &msc MOVE_Y(15)     &msc MOVE_Y(-15)  &msc MOVE_X(-15)     &kp RIGHT_SHIFT  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans              &lt 3 ENTER         &trans            &trans               &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
