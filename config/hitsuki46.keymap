@@ -19,9 +19,29 @@
     combos {
         compatible = "zmk,combos";
 
-        cmd_alt {
-            bindings = <&kp RA(RIGHT_COMMAND)>;
-            key-positions = <31 32>;
+        cmd_r {
+            bindings = <&kp RIGHT_COMMAND>;
+            key-positions = <19 20>;
+        };
+
+        cmd_l {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <16 15>;
+        };
+
+        lan1 {
+            bindings = <&kp LANG1>;
+            key-positions = <19 42>;
+        };
+
+        lang2 {
+            bindings = <&kp LANG2>;
+            key-positions = <16 39>;
+        };
+
+        L7 {
+            bindings = <&mo 7>;
+            key-positions = <28 39>;
         };
     };
 
@@ -136,6 +156,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &bootloader   &trans          &trans        &trans        &trans        &trans
         &trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_1  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
     };
