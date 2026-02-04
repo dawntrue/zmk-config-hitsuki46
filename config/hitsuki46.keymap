@@ -31,12 +31,12 @@
 
         lan1 {
             bindings = <&kp LANG1>;
-            key-positions = <42 20>;
+            key-positions = <20 41>;
         };
 
         lang2 {
             bindings = <&kp LANG2>;
-            key-positions = <39 15>;
+            key-positions = <15 40>;
         };
 
         L4 {
