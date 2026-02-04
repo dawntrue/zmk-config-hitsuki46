@@ -46,7 +46,7 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
         };
     };
 
@@ -130,9 +130,9 @@
 
         R_MOUSE {
             bindings = <
-&trans  &trans          &trans    &trans    &trans    &trans  &kp LG(C)           &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LEFT_ALT         &kp LG(LA(V))  &trans
-&trans  &trans          &trans    &trans    &trans    &to 0   &kp LC(LEFT_ARROW)  &mkp MB1            &mo 5             &kp LC(RIGHT_ARROW)  &trans         &trans
-&trans  &kp LEFT_SHIFT  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &msc MOVE_X(15)     &msc MOVE_Y(15)     &msc MOVE_Y(-15)  &msc MOVE_X(-15)     &mkp MB2       &trans
+&trans  &trans          &trans    &trans    &trans    &trans  &kp LG(C)           &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LEFT_ALT         &kp LG(V)       &trans
+&trans  &trans          &trans    &trans    &trans    &to 0   &kp LC(LEFT_ARROW)  &mkp MB1            &mo 5             &kp LC(RIGHT_ARROW)  &kp LEFT_SHIFT  &trans
+&trans  &kp LEFT_SHIFT  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &msc MOVE_X(15)     &msc MOVE_Y(15)     &msc MOVE_Y(-15)  &msc MOVE_X(-15)     &mkp MB2        &trans
         &trans          &trans    &trans    &trans    &trans  &trans              &lt 2 ENTER         &trans            &trans               &trans
             >;
         };
@@ -161,15 +161,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &bootloader   &trans          &trans        &trans        &trans        &trans
         &trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_1  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
     };
