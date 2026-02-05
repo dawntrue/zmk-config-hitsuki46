@@ -85,6 +85,20 @@
             bindings = <&kp I &kp LANGUAGE_1>;
             label = "VIM_INSERT";
         };
+
+        cmd_click: cmd_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_press>,
+                <&mkp MB1>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
+
+            label = "CMD_CLICK";
+        };
     };
 
     behaviors {
@@ -124,7 +138,7 @@
 &trans  &kp N1                &kp N2              &kp N3            &kp N4             &kp N5         &kp N6          &kp N7          &kp N8        &kp N9           &kp N0                   &trans
 &trans  &mt LEFT_CONTROL TAB  &mt LEFT_ALT GRAVE  &kp EQUAL         &kp SQT            &kp SEMICOLON  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mt RIGHT_CONTROL MINUS  &trans
 &trans  &kp LEFT_SHIFT        &kp BACKSLASH       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &to 4           &trans          &trans        &kp PERIOD       &mt RIGHT_SHIFT SLASH    &trans
-        &trans                &trans              &trans            &trans             &trans         &trans          &trans          &trans        &trans           &trans
+        &trans                &trans              &trans            &trans             &cmd_click     &trans          &trans          &trans        &trans           &trans
             >;
         };
 
