@@ -38,6 +38,11 @@
             bindings = <&mo 3>;
             key-positions = <9 10>;
         };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <13 14>;
+        };
     };
 
     macros {
