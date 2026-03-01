@@ -28,16 +28,6 @@
             bindings = <&kp LANG2>;
             key-positions = <15 16>;
         };
-
-        layer3_L {
-            bindings = <&mo 3>;
-            key-positions = <13 14 15>;
-        };
-
-        layer3_R {
-            bindings = <&mo 3>;
-            key-positions = <22 21 20>;
-        };
     };
 
     macros {
@@ -107,7 +97,7 @@
 
         default {
             bindings = <
-&trans  &kp Q               &kp W           &kp E               &kp R        &kp T     &kp Y          &kp U        &kp I                    &kp O                 &kp P                  &trans
+&trans  &lt 3 Q             &kp W           &kp E               &kp R        &kp T     &kp Y          &kp U        &kp I                    &kp O                 &lt 3 P                &trans
 &trans  &mt LEFT_CONTROL A  &kp S           &kp D               &kp F        &kp G     &kp H          &kp J        &kp K                    &lt 5 L               &mt RCTRL MINUS        &trans
 &trans  &mt LEFT_SHIFT Z    &mt LEFT_ALT X  &mt LEFT_COMMAND C  &kp V        &kp B     &kp N          &kp M        &mt RIGHT_COMMAND COMMA  &mt RIGHT_ALT PERIOD  &mt RIGHT_SHIFT SLASH  &trans
         &mo 6               &trans          &trans              &lt 2 SPACE  &mkp MB1  &kp BACKSPACE  &lt 2 ENTER  &trans                   &trans                &trans
