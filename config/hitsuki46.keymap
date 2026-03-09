@@ -133,10 +133,10 @@
 
         R_MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(C)           &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LEFT_COMMAND     &kp LG(V)        &trans
-&trans  &trans  &trans  &trans  &trans  &to 0   &kp LC(LEFT_ARROW)  &mkp MB1            &mo 5             &kp RC(RIGHT_ARROW)  &mkp MB2         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none               &msc MOVE_Y(15)     &msc MOVE_Y(-15)  &kp LEFT_ALT         &kp RIGHT_SHIFT  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans              &kt ENTER           &trans            &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(C)           &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &none                             &kp LG(V)        &trans
+&trans  &trans  &trans  &trans  &trans  &to 0   &kp LC(LEFT_ARROW)  &mkp MB1            &mo 5             &mt LEFT_COMMAND RC(RIGHT_ARROW)  &mkp MB2         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &none               &msc MOVE_Y(15)     &msc MOVE_Y(-15)  &kp LEFT_ALT                      &kp RIGHT_SHIFT  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans              &kt ENTER           &trans            &trans                            &trans
             >;
         };
 
