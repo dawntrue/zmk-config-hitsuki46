@@ -117,7 +117,7 @@
             bindings = <
 &trans  &kp N1                &kp N2                  &kp N3                         &kp N4             &kp N5         &kp N6          &kp N7          &kp N8             &kp N9                &kp N0                   &trans
 &trans  &mt LEFT_CONTROL TAB  &kp GRAVE               &kp EQUAL                      &kp SQT            &kp SEMICOLON  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT_ARROW       &mt RIGHT_CONTROL MINUS  &trans
-&trans  &kp LEFT_SHIFT        &mt LEFT_ALT BACKSLASH  &mt LEFT_COMMAND LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &to 4           &trans          &kp RIGHT_COMMAND  &mt RIGHT_ALT PERIOD  &mt RIGHT_SHIFT SLASH    &trans
+&trans  &kp LEFT_SHIFT        &mt LEFT_ALT BACKSLASH  &mt LEFT_COMMAND LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans          &trans          &kp RIGHT_COMMAND  &mt RIGHT_ALT PERIOD  &mt RIGHT_SHIFT SLASH    &trans
         &trans                &trans                  &trans                         &trans             &cmd_click     &trans          &trans          &trans             &trans                &trans
             >;
         };
@@ -125,7 +125,7 @@
         MB {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 4   &mkp MB1  &mkp MB2  &trans  &mkp MB3  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans    &trans
         &trans  &trans  &trans  &sleep  &trans  &trans  &trans    &trans    &trans  &trans
             >;
